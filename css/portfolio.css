@@ -1,0 +1,142 @@
+.portfolio {
+    padding: 69px 0;
+}
+
+.portfolio__filter {
+    display: flex;
+    align-items: center;
+}
+
+#back-btn {
+    flex: 1;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.back-btn-text {
+    font-size: 1rem;
+    color: #000;
+    font-family: 'Montserrat-SemiBold';
+    margin-left: 15px;
+}
+
+.portfolio__filter-btns {
+    flex: 1;
+}
+
+.portfolio__filter-item {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 1rem;
+    color: #000;
+    text-transform: uppercase;
+}
+.portfolio__filter-item span:first-child {
+    border-bottom: 1px solid transparent;
+}
+
+.portfolio__filter-item--active span:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.portfolio__filter-item:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.portfolio__filter-item:hover span:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.portfolio__filter-item span {
+    margin-right: 5px;
+}
+
+.project-centered-elem {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#project-info {
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.projects {
+    margin-top: 50px;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.projects__item {
+    max-width: 300px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 300px;
+    background: none;
+    text-align: left;
+    padding: 0;
+}
+
+.projects__stat-text {
+    font-family: 'Montserrat-Regular';
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.projects__text {
+    margin-top: 19px;
+}
+
+.projects__name {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Montserrat-SemiBold';
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .projects__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    #project-info {
+        max-width: 300px;
+        margin: 30px auto;
+    }
+
+    .portfolio__filter {
+        flex-direction: column;
+    }
+
+    #back-btn {
+        margin-bottom: 20px;
+    }
+
+    .portfolio__filter-btns:last-child {
+        display: none;
+    }
+}

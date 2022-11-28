@@ -1,0 +1,120 @@
+.about {
+    padding: 62px 0;
+}
+
+.about__director-wrapper {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about__director-text {
+    max-width: 351px;
+}
+
+.about__description {
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.about__director-name {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 1.25rem;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.about__description:last-child {
+    margin-bottom: 0;
+}
+
+.about__director-photo-text {
+    margin-top: 15px;
+}
+
+.team {
+    padding: 42px 0;
+    background: var(--secondary-bg-color);
+}
+
+.team__member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 190px;
+    margin: 0 auto;
+}
+
+.team__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 73px;
+    gap: 30px;
+}
+
+.team__member-text {
+    margin-top: 7px;
+    align-self: flex-start;
+}
+
+.team__member-name {
+    font-size: 1rem;
+    font-family: 'Montserrat-SemiBold';
+    color: #000;
+    margin: 0;
+}
+
+.team__member-job {
+    font-family: 'Montserrat-Regular';
+    font-size: .875rem;
+    margin: 0;
+}
+
+.rewards {
+    padding: 62px 0;
+}
+
+.rewards__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.rewards__img {
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .about__director-wrapper {
+        margin-top: 42px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about__director-text {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .team__grid, .rewards__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .rewards__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .team__grid {
+        grid-template-columns: 1fr;
+    }
+}

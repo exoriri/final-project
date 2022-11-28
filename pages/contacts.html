@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+    src="https://api-maps.yandex.ru/2.1/?apikey=dd277e96-b7c8-48d9-bcd0-377d2fe2275d&lang=ru_RU"
+    type="text/javascript"
+  ></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/contacts.css" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <nav class="header navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="../index.html">
+            <div class="logo"></div>
+          </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="header__list navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="header__list-item">
+              <a class="header__link" href="../pages/company.html">О компании</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__link" href="../pages/portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__link" href="../pages/services.html">Услуги</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__link" href="../pages/contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a class="header__tel" href="tel:+7(921)555-55-55"
+            >+7(921)555-55-55</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="contacts">
+      <h3 class="section-title">Контакты</h3>
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <div id="map" style="width: 100%; height: 401px"></div>
+
+        <div class="contacts__text">
+          <p class="contacts__title">
+            ООО “БОТАНИКА”
+          </p>
+          <p class="contacts__address-time">
+            Санкт-Петербург, 4-ая линия В.О. д. 15, оф. 5
+          </p>
+          <p class="contacts__address-time">
+            Режим работы:
+  Пн.-Пт.: 10:00-19:00
+  
+          </p>
+          <p class="contacts__title">
+            +7(921)555-55-55
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="help help--primary-color">
+        <div class="container">
+            <div class="help-form__titles">
+                <h3 class="section-title">
+                    Остались вопросы? 
+                </h3> 
+            </div>
+            <form class="help-form" action="">
+                <div class="d-flex justify-content-center flex-wrap help-form__inputs-row">
+                    <input name="name" placeholder="Имя" type="text" class="help-form__input"  type="text">
+                    <input name="tel" placeholder="Телефон" type="tel" class="help-form__input"  type="text">
+                </div>
+                <div class="help-form__inputs-row">
+                    <input name="email" placeholder="E-mail" type="text" class="help-form__input mr-0"  type="text">
+                </div>
+                <div class="help-form__inputs-row">
+                    <div class="help-form__checkbox-wrapper">
+                        <input class="help-form__check-input" type="checkbox" value="" id="privacy">
+                        <div class="help-form__checkmark"></div>
+                    </div>
+                    <label class="form-check-label help-form__label" for="privacy">
+                        Я согласен с Политикой конфиденциальности
+                    </label>
+                </div>
+                <button class="custom-button custom-button--dark">
+                    Оставить заявку
+                </button>
+            </form>
+        </div>
+   
+    </div>
+
+    <footer class="footer">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <div class="footer__address">
+          <p class="footer__address-title">ООО “Ботаника”</p>
+          <div class="footer__address-title">4-ая линия В.О. д. 15, оф. 5</div>
+        </div>
+        <a class="footer__tel" href="tel:+7(921)555-55-55">+7(921)555-55-55</a>
+        <ul class="footer__social-list d-flex">
+          <li class="footer__social-list-item">
+            <a href="">
+              <img
+                class="footer__social-img"
+                src="../assets/icons/social/vk.svg"
+                alt="vk"
+              />
+            </a>
+          </li>
+          <div class="footer__social-list-item">
+            <a href="">
+              <img
+                class="footer__social-img"
+                src="../assets/icons/social/twitter.svg"
+                alt="vk"
+              />
+            </a>
+          </div>
+          <div class="footer__social-list-item">
+            <a href="">
+              <img
+                class="footer__social-img"
+                src="../assets/icons/social/telephone.svg"
+                alt="vk"
+              />
+            </a>
+          </div>
+          <div class="footer__social-list-item">
+            <a href="">
+              <img
+                class="footer__social-img"
+                src="../assets/icons/social/instagram.svg"
+                alt="vk"
+              />
+            </a>
+          </div>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/map.js"></script>
+  </body>
+</html>

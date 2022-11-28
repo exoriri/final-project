@@ -1,0 +1,30 @@
+.contacts {
+    padding: 60px 0;
+}
+
+.contacts__text {
+    margin-top: 56px;
+    max-width: 218px;
+}
+
+.contacts__title {
+    font-size: 1.25rem;
+    font-family: 'Montserrat-SemiBold';
+    margin-bottom: 24px;
+    color: #000;
+}
+
+.contacts__title:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.contacts__address-time {
+    margin-bottom: 11px;
+    font-family: 'Montserrat-Medium';
+    font-size: 1rem;
+    color: #000;
+}
+
+.contacts .section-title {
+    margin-bottom: 39px;
+}

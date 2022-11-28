@@ -1,0 +1,276 @@
+.carousel-item {
+  min-height: 400px;
+}
+
+.carousel-item img {
+  min-height: 400px;
+}
+
+.carousel__overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.28),
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  z-index: 10;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 99;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.carousel-indicators .active {
+  background: rgba(255, 255, 255, 1);
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  max-height: 10px !important;
+  border: none !important;
+  margin-right: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.carousel-control-prev-icon {
+  background: url(../assets/icons/common/arrow-left-transparent.svg);
+  width: 19px;
+  height: 32px;
+}
+
+.carousel-control-next-icon {
+  background: url(../assets/icons/common/arrow-right-transparent.svg);
+  width: 19px;
+  height: 32px;
+}
+
+.carousel__project-info {
+  position: absolute;
+  bottom: 0;
+  z-index: 29;
+  width: 100%;
+  bottom: 10%;
+}
+
+.carousel__calculate-btn {
+  margin-left: 10px;
+  align-self: flex-end;
+}
+
+.carousel__project-btn {
+  border: 2px solid rgba(255, 255, 255, 1);
+  padding: 20px 30px;
+  color: #fff;
+  background: transparent;
+  font-size: 1.25rem;
+  font-family: "Montserrat-SemiBold";
+  transition: transform 0.3s;
+  margin-top: 20px;
+}
+
+.carousel__project-btn:hover {
+  transform: scale(1.02);
+}
+
+.carousel__project-title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: "Montserrat-SemiBold";
+}
+
+.carousel__project-content {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-bottom: 0;
+  font-family: "Montserrat-SemiBold";
+}
+
+.services {
+  padding: 45px;
+}
+
+.services .services-list:nth-child(2) {
+    width: 263px;
+}
+
+.section-title--services {
+  margin-bottom: 40px;
+}
+
+.calculator {
+  padding: 57px 0;
+  background: var(--primary-color);
+}
+
+.calculator .section-title {
+  margin-bottom: 50px;
+}
+
+.calculator-form {
+    max-width: 601px;
+}
+
+.calculator__group {
+  flex: 1;
+}
+
+.calculator__input {
+  border-radius: 10px;
+  background: var(--secondary-bg-color);
+  padding: 18px;
+  padding-right: 12px;
+  border: none;
+  font-family: "Montserrat-Regular";
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.calculator__label {
+  font-family: "Montserrat-Bold";
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.calculator__price {
+  margin: 0;
+}
+
+.calculator__label--regular {
+  font-family: "Montserrat-Regular";
+}
+
+.calculator__row {
+  margin-bottom: 30px;
+}
+
+.calculator__select {
+   appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  text-indent: 1px;
+  position: relative;
+}
+
+.calculator__select-arrow-icon {
+    width: 20px;
+    height: 20px;
+    background: url(../assets/icons/common/arrow-down.svg) no-repeat;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-5px);
+}
+
+.calculator__select-wrapper {
+    position: relative;
+}
+
+.benefits {
+    padding: 74px 0;
+    background-color: var(--secondary-bg-color);
+}
+
+.benefits__block {
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: var(--primary-color);
+}
+
+.benefits__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 92px;
+}
+
+.benefits__title {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 33px;
+    text-align: center;
+    max-width: 120px;
+}
+
+.benefits__block:nth-child(3) .benefits__title {
+    max-width: 163px;
+}
+
+@media screen and (max-width:991px) {
+    .benefits__block {
+        margin-top: 50px;
+    }
+
+    .benefits__grid { 
+        margin-top: 42px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__project-btn {
+    padding: 10px 20px;
+  }
+
+  .carousel__calculate-btn {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .carousel__content-text {
+    justify-content: center !important;
+  }
+
+  .benefits__grid { 
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+  .carousel-item {
+    min-height: 500px;
+  }
+
+  .carousel-item img {
+    min-height: 500px;
+  }
+
+  .carousel__project-title {
+    text-align: center;
+  }
+  .carousel__project-content {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .calculator__row {
+    flex-direction: column;
+  }
+
+  .calculator__group {
+    margin-right: 0 !important;
+    margin-top: 21px;
+  }
+}

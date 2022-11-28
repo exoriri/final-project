@@ -1,0 +1,518 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../assets/fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../assets/fonts/Montserrat-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(../assets/fonts/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../assets/fonts/Montserrat-Bold.ttf) format("truetype");
+}
+
+:root {
+  --primary-color: #99cc66;
+  --secondary-color: #666666;
+  --secondary-bg-color: #F1EFEF;
+}
+
+.custom-button {
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: "Montserrat-SemiBold";
+  color: #fff;
+  padding: 20px 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.custom-button--dark {
+  background: var(--secondary-color);
+}
+
+.header {
+}
+
+.header__list {
+  margin-left: 47px;
+}
+
+.header__list-item {
+  margin-right: 47px;
+}
+
+.header__link {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Montserrat-SemiBold";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__link--active {
+  border-bottom: 1px solid #000;
+}
+
+.header__link:hover {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.header__tel {
+  color: #000;
+  font-family: "Montserrat-Bold";
+  font-size: 1.375rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__tel:hover {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.header--white {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    background: transparent !important;
+}
+
+.header--white .logo {
+  background: url("../assets/images/logo-white.png");
+}
+
+.header--white .header__link {
+  color: #fff;
+}
+
+.header--white .header__tel {
+  color: #fff;
+}
+
+.header--white .header__tel:hover {
+  color: #fff;
+}
+
+.header--white .header__link:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* footer */
+.footer {
+  background: var(--primary-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__address {
+}
+
+.footer__address-title {
+  font-size: 1.125rem;
+  font-family: "Montserrat-SemiBold";
+  color: #fff;
+}
+
+.footer__tel {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: "Montserrat-SemiBold";
+}
+
+.footer__tel:hover {
+  color: #fff;
+}
+
+.footer__social-list {
+  margin-bottom: 0;
+}
+
+.footer__social-list-item {
+  margin-right: 21px;
+}
+
+.footer__social-list-item:last-child {
+  margin-right: 0px;
+}
+
+.section-title {
+  position: relative;
+  color: #000;
+  font-family: "Montserrat-Medium";
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 10;
+}
+
+.section-title--white {
+  color: #fff;
+}
+
+.logo {
+  width: 254px;
+  height: 76px;
+  background: url("../assets/images/logo-black.png");
+  background-size: cover;
+}
+
+.avatar {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+}
+
+.reviews-wrapper {
+    background: var(--secondary-bg-color);
+}
+
+.reviews-wrapper .container {
+}
+
+.reviews {
+    padding: 45px 0;
+    position: relative;
+}
+
+.reviews-carousel {
+    max-width: 300px;
+}
+
+.reviews__block {
+    background: #fff;
+    border-radius: 50px;
+    padding: 30px 0;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    /* margin-right: 69px; */
+}
+
+.reviews__block-wrapper {
+    position: relative;
+    margin-top: 84px;
+    z-index: 10;
+    overflow: hidden;
+    margin-left: 93px;
+}
+
+.reviews__block-title {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.reviews__quote-img {
+    position: absolute;
+    left:0;
+    top: 70px;
+    z-index: 1;
+}
+
+.swiper-btn-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, 50%);
+    left: 0;
+    background: url(../assets/icons/prev-arrow.svg);
+    width: 19px;
+    height: 32px;
+    z-index: 999;
+}
+
+.swiper-btn-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    right: 0;
+    background: url(../assets/icons/next-arrow.svg);
+    width: 19px;
+    height: 32px;
+    z-index: 999;
+}
+
+.services-list-title {
+    font-size: 1.5rem;
+    font-family: 'Montserrat-SemiBold';
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 49px;
+}
+
+.services-list {
+    
+}
+
+.services-list__item {
+    font-family: 'Montserrat-Medium';
+    font-size: 1.25rem;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.services-list__btn {
+    margin-top: 43px;
+    max-width: 230px;
+}
+
+.help {
+    padding: 102px 0;
+}
+
+.help--primary-color {
+    background: var(--primary-color);
+}
+
+.help--primary-color .section-title {
+    color: #fff;
+}
+
+.help-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.help-form__titles {
+    margin-bottom: 66px;
+}
+
+.help-form__inputs-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.help-form__inputs-row:not(:first-child) {
+    margin-top: 21px;
+}
+
+.help-form__inputs-row .help-form__input {
+    margin-right: 21px;
+    width: 100%;
+}
+
+.help-form__inputs-row .help-form__input:nth-child(2) {
+    margin-right: 0px;
+}
+
+.help-form__input {
+    flex: 1;
+    border-radius: 10px;
+    padding: 19px 25px;
+    padding-right: 0px;
+    border: none;
+    background: var(--secondary-bg-color);
+    font-family: 'Montserrat-Regular';
+    font-size: 1.125rem;
+}
+
+.help-form__input::placeholder {
+    font-family: 'Montserrat-Regular';
+    font-size: 1.125rem;
+}
+
+.help-form__checkbox-wrapper {
+    position: relative;
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+}
+
+.help-form__check-input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    z-index: 99;
+}
+
+.help-form__check-input:checked ~ .help-form__checkmark{
+    background: url(../assets/icons/common/checked-checkbox.svg);
+}
+
+.help-form__checkmark {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-bg-color);
+    border-radius: 8px;
+}
+
+.help-form__label {
+    font-size: 1.125rem;
+    font-family: 'Montserrat-Medium';
+    color: #666666;
+}
+
+.help-form .custom-button {
+    margin-top: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header__list {
+        margin-left: 30px;
+    }
+
+    .header__list-item {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+  /* Bootstrap */
+  .collapse:not(.show) {
+    display: none !important;
+  }
+
+  .navbar-dark .navbar-collapse{
+    background: rgba(0, 0, 0, .9);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header__list {
+    margin-left: 0px;
+  }
+
+  .footer__social-img {
+    width: 40px;
+  }
+
+  .footer__social-list-item {
+    margin-right: 10px;
+  }
+
+  .footer__address-title {
+    font-size: 1rem;
+    font-family: "Montserrat-SemiBold";
+    color: #fff;
+  }
+
+  .footer__tel {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Montserrat-SemiBold";
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .services-list-wrapper {
+        flex-direction: column;
+    }
+    
+    .services-list-wrapper .services-list {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__social-img {
+    width: 30px;
+  }
+
+  .footer__social-list-item {
+    margin-right: 10px;
+  }
+
+  .footer__address-title {
+    font-size: 0.9rem;
+  }
+
+  .footer__tel {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .reviews__block-wrapper {
+        margin-left: 0;
+    }
+
+    .reviews-carousel {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .help-form__inputs-row {
+        flex-direction: column;
+    }
+
+    .help-form__inputs-row:nth-child(3) {
+        flex-direction: row !important;
+    }
+
+    .help-form__checkbox-wrapper {
+        margin-right: 21px;
+    }
+    
+    .help-form__input {
+        margin-right: 0 !important;
+        margin-top: 21px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 225px;
+    height: 66px;
+    background: url("../assets/images/logo-black.png");
+    background-size: cover;
+  }
+
+  .footer__social-img {
+    width: 30px;
+  }
+
+  .footer__social-list-item {
+    margin-right: 5px;
+  }
+
+  .footer__address-title {
+    font-size: 0.8rem;
+  }
+
+  .footer__tel {
+    font-size: 0.8rem;
+  }
+
+  .carousel-item {
+    min-height: 500px;
+}
+
+.carousel-item img {
+    min-height: 500px;
+}
+}
